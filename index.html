@@ -4,37 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
 </head>
 <body>
   <header id="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-    <nav>
-      <table width="100%">
-        <tr>
-          <th><a href="#home">Home</a></th>
-          <th><a href="#about">About</a></th>
-          <th><a href="#work">Work</a></th>
-          <th><a href="#resume">Resume</a></th>
-          <th><a href="#contact">Contact</a></th>
-        </tr>
-      </table>
-      
     </nav>
 
   </header>
 
   <main>
-    <div>
-      <h1>This is my first portfolio</h1>
-      <audio src="audio.wav" autoplay></audio>
-    </div>
+    
 
     <section id="home"> 
         <h2>Home</h2>
-        <div>
-          <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png" alt="portfolio image">
+        <div class="name">
+          <h3>I am <br> Mohamed Amine Soudane</h3>
+          <audio src="audio.wav" autoplay></audio>
         </div>
+        <!-- <div class="image">
+          <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png" alt="portfolio image">
+        </div> -->
     </section>
 
     <section id="about">
@@ -63,7 +62,7 @@
     <section id="work">
       <h2><b>Work</b></h2>
       <p>You can check my work in the link below</p>
-      <a href="https://github.com/amine1599?tab=repositories" target="_blank">my github repositories</a>
+      <a href="https://github.com/amine1599?tab=repositories" target="_blank">go to my github repositories</a>
     </section>
 
     <section id="resume">
@@ -97,7 +96,7 @@
       <h2>Contact me</h2>
       <form action="">
         <label for="full name">Full Name</label>
-        <input type="text" name="full name" placeholder="place your full name here">
+        <input type="text" name="full" placeholder="place your full name here">
         <br> <br>
 
         <label for="mail">Your e-mail adress</label>
@@ -114,11 +113,11 @@
 
         <label for="message">message</label>
         <br>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
+        <textarea name="message" id="message" cols="60" rows="10" placeholder="type your message here"></textarea>
         <br> <br>
 
         <label for="contact">Please select how you want to be contacted</label>
-        <select name="contact" id="contact">
+        <select name="contact" id="contact-way">
           <option value="by e-mail">by e-mail</option>
           <option value="by phone">by phone</option>
         </select>
